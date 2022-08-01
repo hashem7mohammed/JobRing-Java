@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="626.0" prefWidth="938.0" style="-fx-background-color: #95CB72;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.ViewJobsController">
+    <children>
+        <Label alignment="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="53.0" prefWidth="113.0"
+               style="-fx-border-color: #000;" text="All jobs">
+            <font>
+                <Font name="Gloucester MT Extra Condensed" size="33.0"/>
+            </font>
+        </Label>
+        <ListView fx:id="listview2" blendMode="SOFT_LIGHT" cache="true" layoutX="144.0" layoutY="176.0"
+                  prefHeight="433.0" prefWidth="90.0"/>
+        <ComboBox fx:id="comb_categ" editable="true" layoutX="20.0" layoutY="81.0" onAction="#show_categories"
+                  prefWidth="150.0" promptText="Categories"/>
+        <Button fx:id="bt_profile" layoutX="703.0" layoutY="23.0" mnemonicParsing="false" onAction="#showProfile"
+                prefHeight="26.0" prefWidth="60.0" text="Profile"/>
+        <Button fx:id="bt_notif" layoutX="608.0" layoutY="24.0" mnemonicParsing="false" onAction="#showNotification"
+                prefHeight="16.0" prefWidth="82.0" text="notification"/>
+        <TextField fx:id="ft_search" layoutX="196.0" layoutY="81.0" onAction="#search"
+                   promptText="Search for companies"/>
+        <Label fx:id="name" layoutX="168.0" layoutY="23.0" prefHeight="26.0" prefWidth="102.0" text="Name"
+               textFill="RED">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <ListView fx:id="listview3" blendMode="SOFT_LIGHT" layoutX="232.0" layoutY="177.0" prefHeight="434.0"
+                  prefWidth="421.0"/>
+        <ListView fx:id="listview" blendMode="SOFT_LIGHT" layoutX="20.0" layoutY="176.0" onMouseClicked="#clicked"
+                  prefHeight="434.0" prefWidth="124.0"/>
+        <ListView fx:id="listview4" blendMode="SOFT_LIGHT" layoutX="653.0" layoutY="176.0" prefHeight="434.0"
+                  prefWidth="66.0"/>
+        <ListView fx:id="listview5" blendMode="SOFT_LIGHT" layoutX="719.0" layoutY="177.0" prefHeight="434.0"
+                  prefWidth="66.0"/>
+        <ListView fx:id="listview6" blendMode="SOFT_LIGHT" layoutX="785.0" layoutY="176.0" prefHeight="434.0"
+                  prefWidth="66.0"/>
+        <ListView fx:id="listview7" blendMode="SOFT_LIGHT" layoutX="851.0" layoutY="176.0" prefHeight="434.0"
+                  prefWidth="66.0"/>
+        <Label fx:id="name1" layoutX="43.0" layoutY="134.0" prefHeight="26.0" prefWidth="66.0" text="Category"
+               textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name11" layoutX="156.0" layoutY="134.0" prefHeight="26.0" prefWidth="66.0" text="Name"
+               textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name111" layoutX="394.0" layoutY="134.0" prefHeight="26.0" prefWidth="114.0" text="Description"
+               textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name112" alignment="CENTER" layoutX="649.0" layoutY="133.0" prefHeight="27.0" prefWidth="73.0"
+               text="Chances" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name1121" alignment="CENTER" layoutX="715.0" layoutY="133.0" prefHeight="27.0" prefWidth="73.0"
+               text="Views" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name11211" alignment="CENTER" layoutX="781.0" layoutY="107.0" prefHeight="27.0" prefWidth="73.0"
+               text="Unique " textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name112111" alignment="CENTER" layoutX="781.0" layoutY="133.0" prefHeight="27.0" prefWidth="73.0"
+               text="views" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name1121111" alignment="CENTER" layoutX="847.0" layoutY="133.0" prefHeight="27.0" prefWidth="73.0"
+               text="Applies" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name1122" alignment="CENTER" layoutX="649.0" layoutY="133.0" prefHeight="27.0" prefWidth="73.0"
+               text="Chances" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name11221" alignment="CENTER" layoutX="649.0" layoutY="107.0" prefHeight="27.0" prefWidth="73.0"
+               text="Count of" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

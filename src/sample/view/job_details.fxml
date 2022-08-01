@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="570.0" prefWidth="800.0" style="-fx-background-color: #95CB72;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.JobDetailsController">
+    <children>
+        <ListView fx:id="listview" layoutX="40.0" layoutY="243.0" prefHeight="258.0" prefWidth="719.0"/>
+        <Button layoutX="374.0" layoutY="524.0" mnemonicParsing="false" onAction="#Back" text="Back" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="46.0" prefWidth="155.0"
+               style="-fx-border-color: #000;" text="Job details">
+            <font>
+                <Font name="Gloucester MT Extra Condensed" size="33.0"/>
+            </font>
+        </Label>
+        <Label fx:id="name" layoutX="40.0" layoutY="70.0" prefHeight="24.0" prefWidth="111.0" text="Name"
+               textFill="RED">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button fx:id="bt_profile_company" layoutX="658.0" layoutY="21.0" mnemonicParsing="false"
+                onAction="#showProfile" text="Show profile">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+        <Label layoutX="42.0" layoutY="206.0" prefHeight="27.0" prefWidth="141.0" text="All applications"
+               textFill="RED">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="57.0" layoutY="155.0" prefHeight="24.0" prefWidth="111.0" text="Count of views">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label layoutX="432.0" layoutY="121.0" prefHeight="26.0" prefWidth="167.0" text="Count of unique views">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Label layoutX="35.0" layoutY="121.0" prefHeight="26.0" prefWidth="155.0" text="Count of applications">
+            <font>
+                <Font size="16.0"/>
+            </font>
+        </Label>
+        <Text fx:id="text_applies" fill="RED" layoutX="208.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="applies" wrappingWidth="63.200000000000045">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+        <Text fx:id="text_views" fill="RED" layoutX="208.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="views" wrappingWidth="63.200000000000045">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+        <Text fx:id="text_unique_views" fill="RED" layoutX="624.0" layoutY="139.0" strokeType="OUTSIDE"
+              strokeWidth="0.0" text="unique views" wrappingWidth="85.60002441406255">
+            <font>
+                <Font size="14.0"/>
+            </font>
+        </Text>
+    </children>
+
+</AnchorPane>

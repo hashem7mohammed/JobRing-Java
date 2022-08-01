@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="244.0" prefWidth="527.0" xmlns="http://javafx.com/javafx/11.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Check">
+    <children>
+        <Label alignment="CENTER" layoutX="176.0" layoutY="31.0" prefHeight="25.0" prefWidth="135.0"
+               text="Check member"/>
+        <Button fx:id="give" layoutX="324.0" layoutY="195.0" mnemonicParsing="false" onAction="#give" text="Give"/>
+        <Button fx:id="back" layoutX="381.0" layoutY="195.0" mnemonicParsing="false" onAction="#back" text="Back"/>
+        <Label alignment="CENTER" layoutX="61.0" layoutY="72.0" prefHeight="25.0" prefWidth="135.0" text="User Name"/>
+        <Label alignment="CENTER" layoutX="61.0" layoutY="110.0" prefHeight="25.0" prefWidth="135.0" text="Major"/>
+        <Label alignment="CENTER" layoutX="61.0" layoutY="145.0" prefHeight="25.0" prefWidth="135.0"
+               text="Date of Birth"/>
+        <TextField fx:id="name" layoutX="203.0" layoutY="72.0" prefHeight="25.0" prefWidth="262.0"/>
+        <TextField fx:id="major" layoutX="203.0" layoutY="110.0" prefHeight="25.0" prefWidth="262.0"/>
+        <ComboBox fx:id="day" layoutX="202.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0"/>
+        <ComboBox fx:id="month" layoutX="290.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0"/>
+        <ComboBox fx:id="year" layoutX="381.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0"/>
+    </children>
+</AnchorPane>

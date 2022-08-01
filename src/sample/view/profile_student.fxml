@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="632.0" prefWidth="865.0" style="-fx-background-color: #95CB72;"
+            xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.controller.ProfileStudentController">
+    <children>
+
+        <Label alignment="CENTER" layoutX="29.0" layoutY="14.0" prefHeight="53.0" prefWidth="113.0"
+               style="-fx-border-color: #000;" text="Profile">
+            <font>
+                <Font name="Gloucester MT Extra Condensed" size="33.0"/>
+            </font>
+        </Label>
+        <Label layoutX="14.0" layoutY="99.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Name" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_name" layoutX="101.0" layoutY="120.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Name" textAlignment="CENTER" wrappingWidth="120.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Label layoutX="14.0" layoutY="148.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Birthday" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="356.0" layoutY="98.0" prefHeight="30.0" prefWidth="94.0" style="-fx-font-weight: bold;"
+               text="Username" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_username" layoutX="453.0" layoutY="120.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="username" textAlignment="CENTER" wrappingWidth="94.38709259033203">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Text fx:id="tf_birthday" layoutX="101.0" layoutY="169.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Birthday" textAlignment="CENTER" wrappingWidth="120.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Button layoutX="522.0" layoutY="359.0" mnemonicParsing="false" onAction="#insertProject"
+                text="Insert project"/>
+        <Label layoutX="11.0" layoutY="316.0" prefHeight="30.0" prefWidth="138.0" style="-fx-font-weight: bold;"
+               text="My projects" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Label layoutX="364.0" layoutY="148.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Email" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_email" layoutX="452.0" layoutY="168.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Email" textAlignment="CENTER" wrappingWidth="189.58710479736328"
+              AnchorPane.bottomAnchor="460.2353515625" AnchorPane.leftAnchor="451.98710479736326"
+              AnchorPane.rightAnchor="223.41289520263672" AnchorPane.topAnchor="151.8134765625">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Label layoutX="14.0" layoutY="187.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Phone" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_phone" layoutX="101.0" layoutY="208.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="Phone" textAlignment="CENTER" wrappingWidth="120.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Label layoutX="364.0" layoutY="187.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="major" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_major" layoutX="453.0" layoutY="208.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="major" textAlignment="CENTER" wrappingWidth="94.38709259033203">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Button fx:id="show_application" layoutX="648.0" layoutY="41.0" mnemonicParsing="false"
+                onAction="#showApplications" text="My applications"/>
+        <TextField fx:id="tf_desc" alignment="TOP_LEFT" layoutX="522.0" layoutY="435.0" prefHeight="135.0"
+                   prefWidth="246.0" promptText="Description" visible="false"/>
+        <Button fx:id="save" layoutX="625.0" layoutY="580.0" mnemonicParsing="false" onAction="#saveData" text="Save"
+                visible="false"/>
+        <Button layoutX="401.0" layoutY="580.0" mnemonicParsing="false" onAction="#Back" prefHeight="26.0"
+                prefWidth="78.0" text="Back" textFill="RED"/>
+        <TableView fx:id="table_project" layoutX="29.0" layoutY="359.0" prefHeight="200.0" prefWidth="460.0">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="97.60000991821289" text="Name"/>
+                <TableColumn fx:id="desc" prefWidth="362.3999786376953" text="Description"/>
+            </columns>
+        </TableView>
+        <Label layoutX="11.0" layoutY="228.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Category" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_category" layoutX="101.0" layoutY="249.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="category" textAlignment="CENTER" wrappingWidth="120.0">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <Label layoutX="364.0" layoutY="227.0" prefHeight="30.0" prefWidth="78.0" style="-fx-font-weight: bold;"
+               text="Skills" textFill="RED">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Label>
+        <Text fx:id="tf_skill" layoutX="453.0" layoutY="248.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="skills" textAlignment="CENTER" wrappingWidth="246.39999999999986">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Text>
+        <TextField fx:id="tf_name_project" alignment="TOP_LEFT" layoutX="519.0" layoutY="396.0" prefHeight="26.0"
+                   prefWidth="246.0" promptText="Name" visible="false"/>
+    </children>
+
+</AnchorPane>
